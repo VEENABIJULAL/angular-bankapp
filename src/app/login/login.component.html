@@ -5,10 +5,10 @@
             <div class="main">
                 <h1>Welcome to federal bank</h1>
                 <h2>{{aim}}</h2>  
-            <input type="text" placeholder="enter account number" [value]="accno" (change)="accnochange($event)"><br>
+            <input type="text" placeholder="enter account number" [value]="acno" #accno><br>
             <input type="text" placeholder="enter username"><br>
-            <input type="password" placeholder="enter password"><br>
-            <input type="button" class="btn btn-success log" value="Log In" (click)="login()"><br>
+            <input type="password" placeholder="enter password" #pswd><br>
+            <input type="button" class="btn btn-success log" value="Log In" (click)="login(accno,pswd)"><br>
             <a href="#">forgotten password?</a>
             <input type="button" class="btn btn-success create"value="Create new account">
             </div>
