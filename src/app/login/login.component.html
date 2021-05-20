@@ -5,10 +5,9 @@
             <div class="main">
                 <h1>Welcome to federal bank</h1>
                 <h2>{{aim}}</h2>  
-            <input type="text" placeholder="enter account number" [value]="acno" #accno><br>
-            <input type="text" placeholder="enter username"><br>
-            <input type="password" placeholder="enter password" #pswd><br>
-            <input type="button" class="btn btn-success log" value="Log In" (click)="login(accno,pswd)"><br>
+            <input type="text" placeholder="enter account number" [(ngModel)]="acno"><br>
+            <input type="password" placeholder="enter password" [(ngModel)]="pswd"><br>
+            <input type="button" class="btn btn-success log" value="Log In" (click)="login()"><br>
             <a href="#">forgotten password?</a>
             <input type="button" class="btn btn-success create"value="Create new account">
             </div>
