@@ -4,13 +4,15 @@
         <div class="col-8">
             <div class="main">
                 <h1>Welcome to federal bank</h1>
-                <h2>{{aim}}</h2>  
-            <input type="text" placeholder="enter account number" [(ngModel)]="acno"><br>
-            <input type="password" placeholder="enter password" [(ngModel)]="pswd"><br>
-            <input type="button" class="btn btn-success log" value="Log In" (click)="login()"><br>
+                <h2>{{aim}}</h2>
+            <form (ngSubmit="login()")>
+                <input type="text" placeholder="enter account number" name="acno" [(ngModel)]="acno"><br>
+            <input type="password" placeholder="enter password" name="pswd" [(ngModel)]="pswd"><br>
+            <input type="submit" class="btn btn-success log" value="Log In"><br>
             <a href="#">forgotten password?</a>
-            <input type="button" class="btn btn-success create"value="Create new account">
-            </div>
+            <input type="button" class="btn btn-success create"value="Create new account"(click)="register()" >
+            </form>  
+        </div>
             
         </div>
         <div class="col-2"></div>

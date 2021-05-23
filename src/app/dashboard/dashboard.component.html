@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <div class="main">
+                <h1>Deposit Form</h1>
+            <form (ngSubmit)="deposit()">
+                <input type="text" placeholder="enter account number" name="acno"[(ngModel)]="dAccno"><br>
+            <input type="password" placeholder="enter password" name="pswd"[(ngModel)]="dpswd"><br>
+            <input type="text" placeholder="enter amount" name="amount"[(ngModel)]="dAmount"><br>
+            <input type="submit" class="btn btn-success log" value="deposit"><br>
+            <a href="#">forgotten password?</a>
+            </form>  
+        </div>
+            
+        </div>
+        <div class="col-2"></div>
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <div class="main">
+                <h1>Withdraw Form</h1>
+            <form (ngSubmit)="withdraw()">
+                <input type="text" placeholder="enter account number" name="acno"[(ngModel)]="wAccno"><br>
+            <input type="password" placeholder="enter password" name="pswd"[(ngModel)]="wpswd"><br>
+            <input type="text" placeholder="enter amount" name="amount"[(ngModel)]="wAmount"><br>
+            <input type="submit" class="btn btn-success log" value="withdraw"><br>
+            <a href="#">forgotten password?</a>
+            </form>  
+        </div>
+            
+        </div>
+        <div class="col-2"></div>
+    </div>
+
+</div>
